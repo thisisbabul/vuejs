@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Vue js</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/vue@next"></script>
 </head>
 <body>
@@ -26,8 +27,8 @@
             <button type="submit">OK</button>
         </form>
         <hr>
-        <div style="border: 1px solid gray; width: 100px; height: 100px;" @click="cardClick">
-            <button style="margin: 10px;" @click.stop="viewClick">view click</button>
+        <div class="card" @click="cardClick">
+            <button class="card-inside" @click.stop="viewClick">view click</button>
         </div>
     </div>
     <script src="app.js"></script>
