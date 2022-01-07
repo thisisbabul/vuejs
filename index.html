@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Vue js</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- <p>Student Name: {{student.name}}</p>
+        <p v-html="email"></p>
+        <a :href="student.githubLink">Github Link</a> -->
+
+        <!-- <h2>Counter: {{counter}}</h2>
+        <button @click="increase(1)">increase</button>
+        <button @click="decrease(1)">decrease</button>
+        <button @click="increase(2)">increase 2</button>
+        <button @click="decrease(2, $event)">decrease 2</button> -->
+
+        <form @submit.prevent="handleSubmit">
+            <h3>Enter name</h3>
+            <input type="text" @keyup.enter="handleKeyup"/>
+            <p>Welcome {{name}}</p>
+            <button type="submit">OK</button>
+        </form>
+        <hr>
+        <div style="border: 1px solid gray; width: 100px; height: 100px;" @click="cardClick">
+            <button style="margin: 10px;" @click.stop="viewClick">view click</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
